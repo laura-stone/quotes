@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Here, Have a Quote!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<style type="text/css">
+			body {
+				padding: 70px;
+			}
+			.hidden * {
+				display: none;
+			}
+			ul {
+				list-style-type: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Quotes</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="jumbotron">
+				<blockquote id="quote-area">
+					<p id="quote">Click for a quote.</p>
+					<cite><p style="color: gray;" id="author">by Laura Stone</p></cite>
+				</blockquote>
+				<div class="container">
+					<button id="json-quote" href="#" class="btn-primary btn-lg btn">Gimme a Quote!</button>
+					<button id="my-quotes" href="#" class="btn-success btn-lg btn">My Quotes</button>
+					<button id="add-quote" href="#" class="btn-lg btn btn-link">Add Quote</button>
+					<br><br>
+					<form name="add-quote-form" class="hidden-xs hidden-md hidden-lg hidden-md">
+						<label for="quote">Quote: &nbsp&nbsp</label>
+						<input type="text" name="quote" id="quoteField">
+						<br>
+						<label for="author">Author: &nbsp</label>
+						<input type="text" name="author" id="authorField">
+						<input type="submit" value="Add me!" href="#">
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/quotes.js"></script>
+	</body>
+</html>
